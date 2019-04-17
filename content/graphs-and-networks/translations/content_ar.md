@@ -1,7 +1,7 @@
 # Graphs and Networks
 
 <div dir="rtl">
-## مقدمة و تجريب الكتابة من اليمين لليسار
+## مقدمة
 </div>
     
 > id: intro
