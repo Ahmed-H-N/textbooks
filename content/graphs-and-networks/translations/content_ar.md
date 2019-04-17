@@ -1,6 +1,6 @@
 ﻿# Graphs and Networks
 
-## Introduction in english مقدمة
+## مقدمة
 
 > id: intro
 > section: introduction
