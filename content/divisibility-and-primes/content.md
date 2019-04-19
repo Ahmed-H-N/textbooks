@@ -891,7 +891,7 @@ must have some of the prime factors of that number.
 
 Suppose that __{.m-red}X__ is the gcd of __{.m-green}18__ and __{.m-blue}30__.
 Then __{.m-red}X__ divides __{.m-green}18__ so the prime factors of __{.m-red}X__
-must be among _{span.number-ball.small.l-blue}2_, _{span.number-ball.small.l-blue}2_
+must be among _{span.number-ball.small.l-blue}2_, _{span.number-ball.small.l-blue}3_
 and _{span.number-ball.small.l-blue}3_. Also, __{.m-red}X__ divides __{.m-blue}30__
 so the prime factors of __{.m-red}X__ must be among _{span.number-ball.small.l-green}2_,
 _{span.number-ball.small.l-green}3_ and _{span.number-ball.small.l-green}5_.
@@ -955,8 +955,8 @@ ${lcm(n,6)} years, which is the [[lcm|gcd|product]] of 6 and ${n}.
 > id: cicadas1
 
 This number seems to be much larger if the cicada cycle is a prime number like
-13 and 17. That‘s is because prime numbers don‘t share any factors with 6, so
-when calculating the lcm we don‘t cancel any duplicate factors.
+13 and 17. That’s because prime numbers don’t share any factors with 6, so
+when calculating the lcm we don’t cancel any duplicate factors.
 
 Of course, cicadas have no idea what prime numbers are – but over millions of
 years, evolution has worked out that prime cycles are the safest. The predator
