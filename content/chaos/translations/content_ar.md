@@ -1,15 +1,12 @@
-# Chaos Theory
+# نظرية الفوضى
 
-## Introduction
+## مقدمة
 
 > section: introduction
 > id: pendulum
 > goals: play
 
-At the beginning of the 18th century, physicists like [Isaac Newton](bio:newton)
-thought that the universe was a giant clockwork machine. If you had precise
-information about every object right now, you could use the laws of physics to
-predict what would happen in the future.
+فى بداية القرن الثامن عشر ميلادى، اعتقد الفزيائيون من أمثال [إسحاق نيوتن](bio:newton) أن طريقة عمل الكون تماثل عمل ساعة ضخمة. وبالتالى فإذا استعطت أن تحصل على معلومات دقيقة بخصوص كل الموجودات فى هذه اللحظة، ستتمكن حينها من استخدام قوانين الفيزياء للتنبؤ بما سيحدث فى المستقبل.
 
 ::: column(width=320)
 
@@ -23,13 +20,10 @@ predict what would happen in the future.
 
 ::: column.grow
 
-One great example is the pendulum. You’ve already seen how you can use
-differential equations to find an equation that calculates the position of the
-pendulum at any time in the future.
+أحد أفضل الأمثلة على ذلك هو البندول البسيط. فلقد سبق أن رأيتَ كيف يمكنك استخدام المعادلات التفاضلية لإيجاد المعادلة التى تحسب مكان البندول البسيط فى أى لحظة زمنية فى المستقبل.
 
-We often say that the motion of the pendulum is __deterministic__: it precisely
-follows Newton’s laws of gravity, and there is no randomness or probability.
-Watch the pendulum swinging, and try to predict what it’ll do next!
+عادة ما نقول أن حركة البندول البسيط هى حركة _حتمية_: فهى تتبع بدقة قانون نيوتن للجاذبية بدون أى عشوائية أو احتمالية.
+شاهد البندول البسيط و هو يتأرجح وحاول -بينما تشاهد- أن تتوقع مسار حركته!
 
 :::
 
@@ -53,15 +47,11 @@ Watch the pendulum swinging, and try to predict what it’ll do next!
 
 ::: column.grow
 
-Now let’s try to make things a bit more interesting by attaching a second
-pendulum to the first one – this is called a __double pendulum__.
+دعنا الآن أن نضيف بعض الإثارة بتعليق بندول بسيط ثانٍ بالبندول الأول. و يُطلق على هذا : _البندول المزدوج_.
 
-Once again, watch its motion, and try to predict what it will do next. You can
-even close your eyes for a few seconds … was your prediction correct?
+عاود المشاهدة و حاول أن تتوقع حركة البندول المزدوج. يمكنك أن تغلق عينيك لثوانٍ ... هل كان توقعك صحيحُا؟
 
-{.reveal(when="play1")} The double pendulum still follows Newton’s deterministic 
-laws of gravity, but the motion seems to [[be completely irregular|behave as if
-there were no gravity|always repeat itself]].
+{.reveal(when="play1")} إن البندول المزوج يتبع أيضا قانون نيوتن الحتمى للجاذبية، لكن الحركة تبدو كما لو أنها [[الأول|الثانى|الثالث]].
 
 {.reveal(when="blank-0")} This becomes every more apparent if we look at
 multiple pendulums. Let’s add three more pendulums behind the first one, each
