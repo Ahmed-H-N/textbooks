@@ -53,39 +53,27 @@
 
 {.reveal(when="play1")} إن البندول المزوج يتبع أيضا قانون نيوتن الحتمى للجاذبية، لكن الحركة تبدو كما لو أنها [[الأول|الثانى|الثالث]].
 
-{.reveal(when="blank-0")} This becomes every more apparent if we look at
-multiple pendulums. Let’s add three more pendulums behind the first one, each
-with a tiny, imperceptible change in their initial angle (less than 0.1°).
-Press play again and watch what happens!
+{.reveal(when="blank-0")} و هذا يبدو جليّا عند النظر لعدَّة بندولات معا. فدعنا نضيف ثلاص بندولات خلف البندول الأول، و كل منها سيختلف زاويته الابتداىية بمقدار ضئيل جدا لا نكاد نراه (أقل من ٠.١ (.
+اضغط زر التشغيل و شاهد ماذا سيحدث.
 
-{.reveal(when="play2")} At the beginning the four pendulums move along the
-same path – but after a few seconds they [[separate|join up|alternate]]
-_{span.reveal(when="blank-1")} and end up taking completely different paths._
+{.reveal(when="play2")} سيتحرك البندولات معا فى البداية فى نفس المسار، لكن بعد بضع ثوانٍ [[سيتفرَّقوا|سيتجمعوا|سيتبادلوا أماكنهم]] _{span.reveal(when="blank-1")} و سنجد أن كلًا منهم اتخذ مسارًا مختلفًا._
 
 :::
 
 ---
 > id: double-pendulum-1
 
-Mathematicians call this behaviour [__chaotic__](gloss:chaos): even if you know
-the physical laws of the system, it is impossible to predict what might happen
-in the future. Tiny changes in the initial conditions are quickly amplified and
-lead to a completely different motion.
+يُطلق الرياضيون مسمَّى [__فوضوى__](gloss:chaos) على هذا السلوك: و معناه أنك حتى لو علمتَ القوانين الفيزيائية الحاكمة التى تصف النظام، فإنه من المستحيل أن نتنبأ يما سيحدث فى المستقبل. وذلك لأن فى هذه الأنظمة الفوضوية (مثل نظام البندول المزدوج)، أىُّ اختلاف ضئيل فى الحالة الابتدائية للنظام سرعان ما تتضخم و تؤدى إلى حركة مختلفة.
 
-It is important to realise that _chaos_ is very different from _randomness_. The
-double pendulum contains no element of chance or probability. It follows the
-precise, deterministic laws of gravity, and nevertheless moves completely
-unpredictably.
+ومن المهم معرفة أن فوضى تختلف كثيرا عن _العشوائية_. فنظام البندول المزدوج لا يحتوى على أى مصادفة أو احتمالية. بل إنه يتبع قوانين الجاذبية الحتمية و الدقيقة. وبالرغم من ذلك فهو يتحرك بطريقة غير متوقعة بتاتًا.
 
-{.r} Chaos appears in many unexpected places in nature and mathematics. In this
-course, we will explore some of these examples, and discover how mathematics can
-help us understand them.
-_{button.next-step} Continue_
+{.r} تظهر الفوضى فى أماكن عجيبة فى طبيعة و الرياضيات. وفى هذا المساق سوف نستكشف بعض من تلك الأمثلة، وسنكتشف كيف ستساعدنا الرياضات فى فهمهم.
+_{button.next-step} أكمِل
 
 ---
 > id: butterfly
 
-### The Butterfly Effect
+### تأثير الفراشة
 
 ::: column.grow
 
