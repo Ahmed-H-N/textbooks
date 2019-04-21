@@ -77,7 +77,7 @@ _{button.next-step} أكمِل_
 
 ::: column.grow
 
-فى عام ١٩٦٢، كان العالم [إدورد لورنز](bio:lorenz) يعمل فى معهد MIT، حيث قام بتطوير محاكاة حاسوبية للمناخ لكى يتنبأ بالطقس.
+فى عام ١٩٦٢، كان العالم [إدورد لورنز](bio:lorenz) يعمل فى معهد MIT، حيث قام بتطوير محاكاة حاسوبية للغلاف الجوى لكى يتنبأ بالطقس.
 
 قام لورنز بتطوير خوارزمية، والتى تأخذ بيانات الطقس الحالية مدخلات لها. من امثلة هذه المدخلات كل من درجة الحرارة و الرطوبة و سرعة الرياح. ثم تقوم الخوارزمية بحساب كيف ستتغير هذه المدخلات بعد عدة دقائق فى المستقبل. وبإعادة هذه العملية مرارًا و تكرارًا، استطاع العالم أن يتنبأ بالطقس لمدة أيام بل وحتى أسابيع فى المستقبل.
 
@@ -108,18 +108,11 @@ _{button.next-step} أكمِل_
 
 ::: column.grow
 
-Lorenz called this the __butterfly effect__: even the flap of a butterfly’s
-wings in Brazil might change the weather conditions enough to set off a tornado
-in Texas, at some point in the future.
+طلق لورنز على هذه الظاهرة مسمَّى _تأثير الفراشة_: أى أن رفة جناح فراشة فى البرازيل من الممكن ان تتسبب فى تغيير حالة الطقس فى تكساس . تغيير يكفى لإحداث إعصار فى لحظة ما بالمستقبل.
 
-Usually, you’d expect a small change to the input parameters also lead to a
-small change in the output. For chaotic systems, like the weather or the double
-pendulum, the opposite is true. Even tiny changes can grow quickly, and lead
-to huge differences.
+فى المعتاد، أنت تتوقع أن تغيير بسيط فى عوامل المدخلات سيؤدى بطبيعة الحال إلى تغيير بسيط فى عوامل الخرج. لكن الحال مختلف فى حالة الأنظمة الفوضوية، مثل الطقس أو البندول المزدوج. ففى هذه الأنظمة، فأن أى تغيير ضئيل يمكنه أن يكبر سريعا و يؤدى لاختلافات ضخمة.
 
-This is why weather prediction only works for a few days into the future. After
-that, slightly inaccurate weather data can lead to completely different
-forecasts.
+هذا هو سبب أن تنبؤات الطقس تجدى نفعا فقط لمدة بضع أيام فى المستقبل. أما بعد من ذلك، فأى بيانات طقس بيها القليل من عدم الدقة ستؤدى إلى تنبؤات مختلفة تمامًا.
 
 ::: 
 
@@ -127,26 +120,16 @@ forecasts.
 > id: butterfly-2
 > goals: video
 
-There is an important difference between _knowing the physical laws_ of a
-system, and being able to _predict its behaviour_. Newtons laws of gravity tell
-us exactly how the double pendulum should move. The differential equations of
-fluid dynamics should, in principle, allow us to calculate the weather at any
-time in the future.
+هناك فرق مهم بين معرفة قوانين الفيزياء لنظام ما، وبين قدرتنا للتنبؤ بسلوك هذا النظام. فقوانين الجاذبية لنيوتن تصف لنا كيف سيتحرك البندول المزدوج بالضبط. والمعادلات التفاضلية فى ديناميكا الموائع تمكننا -نظريا- من حساب حالة الطقس فى لحظة زمنية فى المستقبل .
 
-Unfortunately, for this to work in practice, we would have to measure the
-initial state of the pendulum with infinite precision, or know the exact
-position of every particle in the atmosphere – and that is clearly impossible.
-Over time, tiny measurement errors will completely throw off our predictions.
-In other words, we can _never_ have a perfect weather forecast!
+لكن لسوء الحظ، لكى تؤدى هذه القوانين وظيفتها فى واقعنا، سنحتاج ان نقيس الحالة الإبتدائية للبندول بدقة لا نهائية، أو نعرف مكان كل جسيم فى الغلاف الجوى، و واضح أن هذا مستحيل. فمع الوقت، الأخطاء البسيطة فى القياس ستجعل تنبؤاتنا بعيدة كل البعد عن الصحيح. وبعبارة أخرى، إننا لن نستطيع أن نقوم بتنبؤ صحيح ١٠٠% لحالة الطقس!
 
 ::: figure
 
     x-video(src="images/weather.mp4" poster="images/weather.jpg" width=640 height=360 controls credit="© NASA")
     // source: https://svs.gsfc.nasa.gov/12163
 
-{.caption} NASA uses satellites, planes and thousands of ground-based weather
-stations to take “snapshots” of the atmosphere: measuring important indicators
-like wind speed, rainfall, humidity, air pressure, and ocean currents.
+{.caption} تستخدم وكالة الفضاء ناسا الأقمار الصناعية والطائرات وآلاف محطات الطقس الأرضية لتأخذ "صور" للغلاف الجوى لتقيس مؤشرات هامة كسرعة الرياح وهطول الأمطار والرطوبة وضغط الجو وتيارات المحيطات.
 
 :::
 
@@ -154,18 +137,15 @@ like wind speed, rainfall, humidity, air pressure, and ocean currents.
 > id: dominoes
 > goals: video
 
-Of course, a butterfly doesn’t actually _cause_ a tornado – but it might change
-the conditions of the atmosphere just enough so that a tornado happens _now_
-rather than at some other time in the future.
+فى الواقع، إن الفراشة لا تسبب الإعصار، لكنها من الممكن أن تغيِّر أحوال الغلاف الجوى بالقدر الكافى الذى يجعل الإعصار يحدث الآن بدلا من حدوثه فى وقت آخر فى المستقبل.
 
-You could think about it as a series of dominoes with increasing size. A small
-action that topples the first domino later leads to the largest domino falling:
+يمكنك أن تفكر فى الأمر كما لو كان مثل مجموعة متتالية من قطع الضمنة و متزايدة فى الحجم. ففعل بسيط لإطاحة قطعة الضمنة الأولى سيؤدى بعد ذلك إلى سقوط قطعة الضمنة الكبرى:
 
 ::: figure
 
     x-video(src="images/dominoes.mp4" poster="images/dominoes.jpg" width=480 height=270 controls credit="© Gerrydomino, YouTube")
 
-{.caption} The world’s largest domino toppling.
+{.caption} إطاحة أكبر قطعة ضمنة فى العالم.
 
 :::
 
@@ -173,32 +153,28 @@ action that topples the first domino later leads to the largest domino falling:
 > id: applications
 > goals: video
 
-### More Applications
+### تطبيقات أخرى
 
-You’ve already seen that the double pendulum and the weather behave chaotically,
-but there are countless other examples in nature and technology:
+سبق أن رأيتَ أن البندول المزدوج و الطقس يسلكون سلوك فوضوى، وهناك عدد لا يحصى من الأمثلة الأخرى فى الطبيعة و التكنولوجيا:
 
 ::: column(width=200)
 
     x-video(src="images/reaction.mp4" poster="images/reaction.jpg" width=200 height=200 credit="© Tim Kench, YouTube")
     // source: https://www.youtube.com/watch?v=PpyKSRo8Iec
 
-{.caption} The __Belousov–Zhabotinsky__ reaction occurs when you mix _bromate_
-with an acid. (Shown at 20x speed, © Tim Kench)
+{.caption} يحدث تفاعل بيلؤوسوف-جابوتينسكى عند خلط البرومات مع حامض. (سرعة العرض ٢٠ ضعف ، © Tim Kench)
 
 ::: column(width=200)
 
     x-media(lightbox src="images/finance.jpg" width=200 height=200)
 
-{.caption} __Stock markets__, inflation and other parts of the economy are
-chaotic, making them very difficult to predict.
+{.caption} _أسواق البرصة_ والتضخم والعوامل الإقتصادية الأخرى هم أنظمة فوضوية مما يجعل التنبؤ بهم فى غاية الصعوبة.
 
 ::: column(width=200)
 
     x-media(lightbox src="images/heart.jpg" width=200 height=200)
 
-{.caption} Scientists hope that explaining the origin of chaotic
-__heartbeats__ (_ventricular fibrillation_) can lead to a cure.
+{.caption} يأمل العلماء بأن يتم تفسير أصل _نبضات القلب_ الفوضوية (رجفان بطينى) .حيث بتفسير هذا يمكننا التوصل لعلاج.
 
     // Often life threatening abnomal heartbeat after a heart attack. Maybe
     // chaos can predict this and help design better pacemakers.
@@ -212,15 +188,13 @@ __heartbeats__ (_ventricular fibrillation_) can lead to a cure.
 
     x-media(lightbox src="images/city.jpg" width=200 height=200)
 
-{.caption} __Population dynamics__ often is chaotic – from the number of humans
-in a city, to rodent, fish or insect populations.
+{.caption} عادة ما يكون _تغيُّر تعداد الجماعات_ نظام فوضى. مثل تغير تعداد البشر أو القوارض أو الأسماك أو الحشرات.
 
 ::: column(width=200)
 
     x-media(lightbox src="images/stars.jpg" width=200 height=200 credit="Hubble/ESO")
 
-{.caption} __Variable stars__ pulsate by altering their brightness over time.
-Some of these stars pulsate in a chaotic pattern.
+{.caption} تنبض _النجوم المتغيرة_ فيتم تبادل شدة إضاءتها بين القوة والضعف مع مرور الزمن. بعض هذه النجوم تنبض بنمط فوضوى.
 
     // https://en.wikipedia.org/wiki/Stellar_pulsation
 
@@ -228,25 +202,19 @@ Some of these stars pulsate in a chaotic pattern.
 
     x-media(lightbox src="images/code.jpg" width=200 height=200)
 
-{.caption} Computers can use chaotic systems to generate pseudo-__random
-numbers__, or to securely encrypt images.
+{.caption} يمكن للكمبيوترات أن تستخدم الأنظمة العشوائية لتوليد _أعداد شبه عشوائية_ أو لعمل تشفير آمن لصورة ما.
 
 :::
 
 ---
 > id: applications-1 
 
-Chaotic behaviour has also been found in electronic circuits, evolutionary
-biology as well as dripping water taps, and scientists around the world are
-researching many other applications.
+لوحظ وجود السلوك الفوضوى أيضا الدوائر الإلكترونية والأحياء التطورية و فى الصنابير التى يتقاطر منها الماء، و يعكف العلماء حول العالم للبحث فى العديد من التطبيقات الأخرى.
 
     // https://en.wikipedia.org/wiki/Chua%27s_circuit
     // https://www.quantamagazine.org/can-scientists-predict-the-future-of-evolution-20140717/
 
-But in all these examples, the existence of chaos means that there are
-fundamental limits to how well we can predict the future. This is often called
-a __prediction horizon__, beyond which it is impossible to make any accurate
-forecasts.
+إن رؤيتنا لكل هذه الأمثلة الفوضوية يعكس لنا أن هناك حدود أمام قدرتنا على تنبؤ المستقبل بدقة. وهذا يُطلق عليه عادةً _أُفُق التنبؤ_ و الذى يستحيل أن نقوم بأى تنبؤات دقيقة إذا تخطيناه.
 
 ::: column(width=300)
 
@@ -254,58 +222,42 @@ forecasts.
 
 ::: column.grow
 
-The weather forecast currently has a prediction horizon of approximately one
-week, and even with much better technology in the future, we might never surpass
-two weeks of accuracy.
+أُفُق التنبؤ لتوقعات الطقس يساوى تقريبًا أسبوعًا واحدًا، وحتى لو تقدمت التكنولوجيا كثيرا فى المستقبل فغالبًا لن نستطيع تخطى توقع أسبوعين بدقة.
 
-{.r} Instead, scientists can use probability to predict _averages_: for example
-how often they’d expect certain weather events (like a tornado) to occur in a
-year. These averages can be very accurate, even if we don’t know _when exactly_
-a tornado might happen.
-_{button.next-step} Continue_
+{.r} بدلا من هذا، يستخدم العلماء الاحتمالات ليتنبأوا بالمتوسطات الحسابية: فعلى سبيل المثال، كم مرة يُتوقع أن تقع أحداث طقس  معينة (مثل الإعصار) خلال العام. فهذه المتوسطات يمكنها أن تكون دقيقة للغاية حتى لو لم نعلم متى بالضبط سيحدث إعصار.
+_{button.next-step} أكمِل_
 
 :::
 
 ---
 > id: definitions
 
-Let’s summarise the key properties of _chaos_ that we have discovered so far:
+دعنا نقوم بتلخيص الصفات الأساسية للفوضى التى اكتشفناها سويًّا حتى الآن:
 
 ::: .theorem
 
-* A __chaotic system__ follows precise, [[deterministic|probabilistic|unpredictable]]
-  laws, often described by one or more differential equations.
-* {.reveal(when="blank-0")} Chaotic systems are highly __sensitive to change__.
-  [[Tiny|Large]] initial differences multiply over time and can lead to
-  [[huge|small|random]] differences in the result.
-* {.reveal(when="blank-1 blank-2")} The behaviour is __unpredictable__ and
-  non-repeating. It might even _look random_, but only because it depends on
-  imperceptible changes or measurement errors.
+* _النظام الفوضوى_ يتبع قوانين [[حتمية|احتمالية|غير متوقعة]] دقيقة، عادة ما يتم وصفها بمعادلة تفاضلية أو أكثر.
+* {.reveal(when="blank-0")} الأنظمة الفوضوية تكون حساسة جدا لأى تغيير. وبالتالى فالفروق الابتدائية [[الضئيلة|الكبيرة]] سيتضاعف مع الوقت و سيؤدى إلى فروق [[ضخمة|صغيرة|عشوائية]] فى النتائج.
+* {.reveal(when="blank-1 blank-2")} السلوك _غير متوقع_ ولا يمكننا إعادته. بل قد يبدو السلوك عشوائى، لكنه ليس كذلك، فهو يبدو هكذا بسبب التغيرات الغير محسوسة أو أخطاء القياس.
 
 :::
 
 ---
 > id: definitions-1
 
-Chaos theory tells us that we can never predict the future, or know in advance
-what outcome our actions might have. This can be worrying if you consider how
-much in our world depends on mathematical predictions: from modelling the wind
-flowing around airplanes or skyscrapers, to assessing the impact of climate
-change.
+تخبرنا نظرية الفوضى أننا لن نستطيع أبدا التنبؤ بالمستقبل أو نعرف مسبقا نتائج أفعالنا. قد يبدو هذا مقلقًا لو علمت الكم الكبير فى العالم الذى يعتمد على التوقعات الرياضية: ابتداءً من نمذجة الرياح الذى يسير حول الطائرات أو ناطحات السحاب، مرورًا بتقييم تأثير التغيُّر المناخى.
 
 ---
 > id: pop-culture
 > goals: video
 
-On the other hand, chaos theory and the butterfly effect were such simple and
-powerful ideas, that they soon started to appear in books, music lyrics, and
-even in movies:
+و على الجانب الآخر، فنظرية الفوضى و تأثيؤ الفراشة كانتا أفكار بسيطة و قوية لدرجة أنهما بدأا يظهران فى الكتب و كلمات الأغانى و حتى فى الأفلام:
 
 ::: figure
 
     x-video(src="images/jurassic-park.mp4" poster="images/jurassic-park.jpg" width=480 height=270 audio controls)
 
-{.caption} Extract from the movie _Jurassic Park_ (© Universal Pictures, 1993) 
+{.caption} مأخوذ من فلم _Jurassic Park_ (© Universal Pictures, 1993)
 
 :::
 
