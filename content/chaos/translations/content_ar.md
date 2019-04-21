@@ -267,15 +267,13 @@ _{button.next-step} أكمِل_
 
 
 
-## Mathematical Billiard
+## البلياردو الرياضية
 
 > id: pool
 > section: billiard
 > sectionBackground: dark casino
 
-One of the most surprising properties of chaos is that it can appear in really
-simple systems. You've already seen the double-pendulum in the previous section.
-Another fascinating example are billiard tables.
+من اكثر الخصائص المدهشة للفوضى، أنها تظهر فى أمثلة بسيطةً جدًا. لقد رأيتَ البندول المزدوج فى الفصل السابق. و مثال آخر رائع هو طاولات البلياردو.
 
 * https://plus.maths.org/content/chaos-billiard-table
 * https://en.wikipedia.org/wiki/Dynamical_billiards
@@ -284,19 +282,9 @@ Another fascinating example are billiard tables.
 * http://mathcircle.wustl.edu/uploads/4/9/7/9/49791831/20160306-billiards-presentation.pdf
 * http://people.maths.ox.ac.uk/tanner/Prospects2010/CUlcigraiTalk.pdf
 
-{.fixme} Imagine you are trying to predict the path a ball on a billiard table
-will take in response to a push. The rules at play simple: the ball's
-acceleration is equal to the force applied divided by its mass (that's Newton's
-second law of motion) and when it hits a side, the angle of reflection is equal
-to the angle of incidence (strictly speaking you also need to include the effect
-of friction, but that's not too hard to do).
+{.fixme} تخيل لو أنك تحاول التنبؤ بالمسار الذى ستتخذه كرة بلياردو على الطاولة نتيجة لدفعة عليها. القواعد الحاكمة لأمر بسيطة: عجلة الكرة تساوى القوة المطبقة على الكرة مقسومةً على كتلتها (هذا هو قانون الحركة الثانى لنيوتن) و عندما تصدم الكرة حافة الطاولة، فزاوية الانعكاس تساوى زاوية السقوط ( للدقة يلزمك أيضا أخذ تأثير الاحتكاك فى الاعتبار، لكن ذلك ليس صعبا)
 
-{.fixme} The trouble is that in your average pub setting you can't easily
-measure the exact amount of force applied to the ball, the exact angle with
-which it hits a side, and so on. As you make your calculations, this small
-initial uncertainty can snowball, so that pretty soon your prediction may
-become so uncertain as to be useless. That "sensitivity to ignorance" is the
-hallmark of mathematical chaos.
+{.fixme} تكمن المشكلة فى أنه عندما تلعب فى النادى فعادة لا يمكنك قياس بسهولة المقدار الدقيق للقوة المطبقة على الكرة ولا الزاوية الدقيقة التى ترتطم الكرة بها مع حافة الطاولة ، وهكذا. و حتى لو قمت بحساباتك، فالمقدار الصغير الابتدائى من عدم التأكد يمكنه أن يكون مثل كرة الثلج، فبعد خطوات قليلة ستكون توقعاتك غير أكيدة بل وعديمة الفائدة. هذه "الحساسية لعدم المعرفة" هى السمة المميزة لرياضيات الفوضى.
 
     figure.r
       svg(width=760 height=440 viewBox="0 0 760 440")
@@ -309,16 +297,15 @@ hallmark of mathematical chaos.
 
 ---
 
-### Elliptical Billiard
+### البلياردو البيضاوية
 
-Move the yellow ball in the center, and see where it ends up after 100
-collisions:
+حرك الكرة الصفراء للمنتصف، و انظر أين سينتهى بها المكاف بعد ١٠٠ اصطدام:
 
     figure: x-pool-table: svg(width=760 height=440 viewBox="0 0 760 440")
 
 ---
 
-### Chaotic Scattering
+### الانتشار الفوضوى
 
 {.fixme} Gaspard–Rice system
 
