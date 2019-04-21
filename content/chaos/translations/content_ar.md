@@ -1,15 +1,12 @@
-# Chaos Theory
+# نظرية الفوضى
 
-## Introduction
+## مقدمة
 
 > section: introduction
 > id: pendulum
 > goals: play
 
-At the beginning of the 18th century, physicists like [Isaac Newton](bio:newton)
-thought that the universe was a giant clockwork machine. If you had precise
-information about every object right now, you could use the laws of physics to
-predict what would happen in the future.
+فى بداية القرن الثامن عشر ميلادى، اعتقد الفيزيائيون من أمثال [إسحاق نيوتن](bio:newton) أن طريقة عمل الكون تماثل عمل ساعة ضخمة. وبالتالى فإذا استطعت أن تحصل على معلومات دقيقة بخصوص كل الموجودات فى هذه اللحظة، ستتمكن حينها من استخدام قوانين الفيزياء للتنبؤ بما سيحدث فى المستقبل.
 
 ::: column(width=320)
 
@@ -23,13 +20,10 @@ predict what would happen in the future.
 
 ::: column.grow
 
-One great example is the pendulum. You’ve already seen how you can use
-differential equations to find an equation that calculates the position of the
-pendulum at any time in the future.
+أحد أفضل الأمثلة على ذلك هو البندول البسيط. فلقد سبق أن رأيتَ كيف يمكنك استخدام المعادلات التفاضلية لإيجاد المعادلة التى تحسب مكان البندول البسيط فى أى لحظة زمنية فى المستقبل.
 
-We often say that the motion of the pendulum is __deterministic__: it precisely
-follows Newton’s laws of gravity, and there is no randomness or probability.
-Watch the pendulum swinging, and try to predict what it’ll do next!
+عادة ما نقول أن حركة البندول البسيط هى حركة _حتمية_: فهى تتبع بدقة قانون نيوتن للجاذبية بدون أى عشوائية أو احتمالية.
+شاهد البندول البسيط و هو يتأرجح وحاول -بينما تشاهد- أن تتوقع مسار حركته!
 
 :::
 
@@ -53,82 +47,52 @@ Watch the pendulum swinging, and try to predict what it’ll do next!
 
 ::: column.grow
 
-Now let’s try to make things a bit more interesting by attaching a second
-pendulum to the first one – this is called a __double pendulum__.
+دعنا نضيف بعض الإثارة بتعليق بندول بسيط ثانٍ بالبندول الأول. و يُطلق على هذا : _البندول المزدوج_.
 
-Once again, watch its motion, and try to predict what it will do next. You can
-even close your eyes for a few seconds … was your prediction correct?
+عاود المشاهدة و حاول أن تتوقع حركة البندول المزدوج. يمكنك أن تغلق عينيك لثوانٍ ... هل كان توقعك صحيحًا؟
 
-{.reveal(when="play1")} The double pendulum still follows Newton’s deterministic 
-laws of gravity, but the motion seems to [[be completely irregular|behave as if
-there were no gravity|always repeat itself]].
+{.reveal(when="play1")} إن البندول المزوج يتبع أيضا قانون نيوتن الحتمى للجاذبية، لكن الحركة تبدو كما لو أنها [[غير منتظمة بتاتًا|لا توجد جاذبية|تتكرر دومًا]].
 
-{.reveal(when="blank-0")} This becomes every more apparent if we look at
-multiple pendulums. Let’s add three more pendulums behind the first one, each
-with a tiny, imperceptible change in their initial angle (less than 0.1°).
-Press play again and watch what happens!
+{.reveal(when="blank-0")} و هذا يبدو جليّا عند النظر لعدَّة بندولات معا. فدعنا نضيف ثلاث بندولات خلف البندول الأول، و كل منها سيختلف زاويته الابتدائية بمقدار ضئيل جدا لا نكاد نراه (أقل من ٠.١°).
+اضغط زر التشغيل و شاهد ماذا سيحدث.
 
-{.reveal(when="play2")} At the beginning the four pendulums move along the
-same path – but after a few seconds they [[separate|join up|alternate]]
-_{span.reveal(when="blank-1")} and end up taking completely different paths._
+{.reveal(when="play2")} سيتحرك البندولات معا فى البداية فى نفس المسار، لكن بعد بضع ثوانٍ [[سيتفرَّقوا|سيتجمعوا|سيتبادلوا أماكنهم]] _{span.reveal(when="blank-1")} و سنجد أن كلًا منهم اتخذ مسارًا مختلفًا._
 
 :::
 
 ---
 > id: double-pendulum-1
 
-Mathematicians call this behaviour [__chaotic__](gloss:chaos): even if you know
-the physical laws of the system, it is impossible to predict what might happen
-in the future. Tiny changes in the initial conditions are quickly amplified and
-lead to a completely different motion.
+يُطلق الرياضيون مسمَّى [__فوضوى__](gloss:chaos) على هذا السلوك: و معناه أنك حتى لو علمتَ القوانين الفيزيائية الحاكمة التى تصف النظام، فإنه من المستحيل أن نتنبأ يما سيحدث فى المستقبل. وذلك لأن فى هذه الأنظمة الفوضوية (مثل نظام البندول المزدوج)، أىُّ اختلاف ضئيل فى الحالة الابتدائية للنظام سرعان ما تتضخم و تؤدى إلى حركة مختلفة.
 
-It is important to realise that _chaos_ is very different from _randomness_. The
-double pendulum contains no element of chance or probability. It follows the
-precise, deterministic laws of gravity, and nevertheless moves completely
-unpredictably.
+ومن المهم معرفة أن فوضى تختلف كثيرا عن _العشوائية_. فنظام البندول المزدوج لا يحتوى على أى مصادفة أو احتمالية. بل إنه يتبع قوانين الجاذبية الحتمية و الدقيقة. وبالرغم من ذلك فهو يتحرك بطريقة غير متوقعة بتاتًا.
 
-{.r} Chaos appears in many unexpected places in nature and mathematics. In this
-course, we will explore some of these examples, and discover how mathematics can
-help us understand them.
-_{button.next-step} Continue_
+{.r} تظهر الفوضى فى أماكن عجيبة فى طبيعة و الرياضيات. وفى هذا المساق سوف نستكشف بعض من تلك الأمثلة، وسنكتشف كيف ستساعدنا الرياضات فى فهمهم.
+_{button.next-step}أكمِل_
 
 ---
 > id: butterfly
 
-### The Butterfly Effect
+### تأثير الفراشة
 
 ::: column.grow
 
-In 1962, the mathematician [Edward Lorenz](bio:lorenz) was working at MIT, where
-he was developing computer simulations of the atmosphere, to predict
-the weather.
+فى عام ١٩٦٢، كان العالم [إدورد لورنز](bio:lorenz) يعمل فى معهد MIT، حيث قام بتطوير محاكاة حاسوبية للغلاف الجوى لكى يتنبأ بالطقس.
 
-Lorenz had developed an algorithm that took current weather data like
-temperature, humidity and wind speed as inputs. It then calculated how these
-values would change a few minutes into the future. By repeating the process over
-and over again, he was able to predict the weather days, or even weeks into the
-future.
+قام لورنز بتطوير خوارزمية، والتى تأخذ بيانات الطقس الحالية مدخلات لها. من امثلة هذه المدخلات كل من درجة الحرارة و الرطوبة و سرعة الرياح. ثم تقوم الخوارزمية بحساب كيف ستتغير هذه المدخلات بعد عدة دقائق فى المستقبل. وبإعادة هذه العملية مرارًا و تكرارًا، استطاع العالم أن يتنبأ بالطقس لمدة أيام بل وحتى أسابيع فى المستقبل.
 
 ::: column(width=320)
 
     x-media(src="images/lgp30.jpg" width=320 height=280)
 
-{.caption} Edward Lorenz used an LGP-30, one of the first off-the-shelf
-computers.
+{.caption} استخدك لورنز جهاز LGP-30 و هو أحد أوائل أجهزة الكمبيوتر الجاهزة للاستخدام المباشر.
 
 :::
 
-One day, Lorenz decided to run parts of his simulation a second time, with the
-same input data. To his surprise, the weather predictions created in both cases
-were completely different!
+وفى أحد الأيام، قرر لورنز أن يقوم مرةً أخرى بتشغيل بعض أجزاء المحاكاة باستخدام نفس البيانات كمدخلات. لكنه اندهش عندما وجد ان تنبؤات الطقس كانت مختلفة تماما عن الحالة السابقة!
 
-{.r} At first, Lorenz thought there must be a bug in the code – but he quickly
-worked out what was actually going on. When running the simulation a second time,
-he had rounded some of the input values to fewer decimal places (for example
-0.506 instead of 0.506127). Even though the difference is tiny, less than 0.1%,
-it seems to have been enough to cause the simulation to make completely
-different forecasts.
-_{button.next-step} Continue_
+{.r} اعتقد لورنز فى بادئ الأمر أنه لابد أن يكون هناك خطأ فى سطور الأوامر، لكن سرعان ما استطاع معرفة ما حدث. عندما قام لورنز بتشغيل المحاكاة للمرة الثانية كان قد أجرى عملية تقريب لبعض قيم المدخلات بحيث يصبح العدد به خانات أقل (مثلا استخدم ٠.٥٠٦ بدلا من ٠.٥٠٦١٢٧) . و بالرغم من أن الفارق ضئيل للغاية  (أقل من ٠.١%) إلا أنه كان كافيا ليجعل المحاكاة تُصدِر تنبؤ مختلف
+_{button.next-step}أكمِل_
 
 ---
 > id: butterfly-1
@@ -144,18 +108,11 @@ _{button.next-step} Continue_
 
 ::: column.grow
 
-Lorenz called this the __butterfly effect__: even the flap of a butterfly’s
-wings in Brazil might change the weather conditions enough to set off a tornado
-in Texas, at some point in the future.
+طلق لورنز على هذه الظاهرة مسمَّى __تأثير الفراشة__: أى أن رفة جناح فراشة فى البرازيل من الممكن ان تتسبب فى تغيير حالة الطقس فى تكساس . تغيير يكفى لإحداث إعصار فى لحظة ما بالمستقبل.
 
-Usually, you’d expect a small change to the input parameters also lead to a
-small change in the output. For chaotic systems, like the weather or the double
-pendulum, the opposite is true. Even tiny changes can grow quickly, and lead
-to huge differences.
+فى المعتاد، أنت تتوقع أن تغيير بسيط فى عوامل المدخلات سيؤدى بطبيعة الحال إلى تغيير بسيط فى عوامل الخرج. لكن الحال مختلف فى حالة الأنظمة الفوضوية، مثل الطقس أو البندول المزدوج. ففى هذه الأنظمة، فأن أى تغيير ضئيل يمكنه أن يكبر سريعا و يؤدى لاختلافات ضخمة.
 
-This is why weather prediction only works for a few days into the future. After
-that, slightly inaccurate weather data can lead to completely different
-forecasts.
+هذا هو سبب أن تنبؤات الطقس تجدى نفعا فقط لمدة بضع أيام فى المستقبل. أما بعد من ذلك، فأى بيانات طقس بيها القليل من عدم الدقة ستؤدى إلى تنبؤات مختلفة تمامًا.
 
 ::: 
 
@@ -163,26 +120,16 @@ forecasts.
 > id: butterfly-2
 > goals: video
 
-There is an important difference between _knowing the physical laws_ of a
-system, and being able to _predict its behaviour_. Newtons laws of gravity tell
-us exactly how the double pendulum should move. The differential equations of
-fluid dynamics should, in principle, allow us to calculate the weather at any
-time in the future.
+هناك فرق مهم بين _معرفة قوانين الفيزياء_ لنظام ما، وبين قدرتنا _للتنبؤ بسلوك_ هذا النظام. فقوانين الجاذبية لنيوتن تصف لنا كيف سيتحرك البندول المزدوج بالضبط. والمعادلات التفاضلية فى ديناميكا الموائع تمكننا -نظريا- من حساب حالة الطقس فى لحظة زمنية فى المستقبل .
 
-Unfortunately, for this to work in practice, we would have to measure the
-initial state of the pendulum with infinite precision, or know the exact
-position of every particle in the atmosphere – and that is clearly impossible.
-Over time, tiny measurement errors will completely throw off our predictions.
-In other words, we can _never_ have a perfect weather forecast!
+لكن لسوء الحظ، لكى تؤدى هذه القوانين وظيفتها فى واقعنا، سنحتاج ان نقيس الحالة الإبتدائية للبندول بدقة لا نهائية، أو نعرف مكان كل جسيم فى الغلاف الجوى، و واضح أن هذا مستحيل. فمع الوقت، الأخطاء البسيطة فى القياس ستجعل تنبؤاتنا بعيدة كل البعد عن الصحيح. وبعبارة أخرى، إننا لن نستطيع أن نقوم بتنبؤ صحيح ١٠٠% لحالة الطقس!
 
 ::: figure
 
     x-video(src="images/weather.mp4" poster="images/weather.jpg" width=640 height=360 controls credit="© NASA")
     // source: https://svs.gsfc.nasa.gov/12163
 
-{.caption} NASA uses satellites, planes and thousands of ground-based weather
-stations to take “snapshots” of the atmosphere: measuring important indicators
-like wind speed, rainfall, humidity, air pressure, and ocean currents.
+{.caption} تستخدم وكالة الفضاء ناسا الأقمار الصناعية والطائرات وآلاف محطات الطقس الأرضية لتأخذ "صور" للغلاف الجوى لتقيس مؤشرات هامة كسرعة الرياح وهطول الأمطار والرطوبة وضغط الجو وتيارات المحيطات.
 
 :::
 
@@ -190,18 +137,15 @@ like wind speed, rainfall, humidity, air pressure, and ocean currents.
 > id: dominoes
 > goals: video
 
-Of course, a butterfly doesn’t actually _cause_ a tornado – but it might change
-the conditions of the atmosphere just enough so that a tornado happens _now_
-rather than at some other time in the future.
+فى الواقع، إن الفراشة لا تسبب الإعصار، لكنها من الممكن أن تغيِّر أحوال الغلاف الجوى بالقدر الكافى الذى يجعل الإعصار يحدث الآن بدلا من حدوثه فى وقت آخر فى المستقبل.
 
-You could think about it as a series of dominoes with increasing size. A small
-action that topples the first domino later leads to the largest domino falling:
+يمكنك أن تفكر فى الأمر كما لو كان مثل مجموعة متتالية من قطع الضمنة و متزايدة فى الحجم. ففعل بسيط لإطاحة قطعة الضمنة الأولى سيؤدى بعد ذلك إلى سقوط قطعة الضمنة الكبرى:
 
 ::: figure
 
     x-video(src="images/dominoes.mp4" poster="images/dominoes.jpg" width=480 height=270 controls credit="© Gerrydomino, YouTube")
 
-{.caption} The world’s largest domino toppling.
+{.caption} إطاحة أكبر قطعة ضمنة فى العالم.
 
 :::
 
@@ -209,32 +153,28 @@ action that topples the first domino later leads to the largest domino falling:
 > id: applications
 > goals: video
 
-### More Applications
+### تطبيقات أخرى
 
-You’ve already seen that the double pendulum and the weather behave chaotically,
-but there are countless other examples in nature and technology:
+سبق أن رأيتَ أن البندول المزدوج و الطقس يسلكون سلوك فوضوى، وهناك عدد لا يحصى من الأمثلة الأخرى فى الطبيعة و التكنولوجيا:
 
 ::: column(width=200)
 
     x-video(src="images/reaction.mp4" poster="images/reaction.jpg" width=200 height=200 credit="© Tim Kench, YouTube")
     // source: https://www.youtube.com/watch?v=PpyKSRo8Iec
 
-{.caption} The __Belousov–Zhabotinsky__ reaction occurs when you mix _bromate_
-with an acid. (Shown at 20x speed, © Tim Kench)
+{.caption} يحدث تفاعل بيلؤوسوف-جابوتينسكى عند خلط البرومات مع حامض. (سرعة العرض ٢٠ ضعف ، © Tim Kench)
 
 ::: column(width=200)
 
     x-media(lightbox src="images/finance.jpg" width=200 height=200)
 
-{.caption} __Stock markets__, inflation and other parts of the economy are
-chaotic, making them very difficult to predict.
+{.caption} _أسواق البرصة_ والتضخم والعوامل الإقتصادية الأخرى هم أنظمة فوضوية مما يجعل التنبؤ بهم فى غاية الصعوبة.
 
 ::: column(width=200)
 
     x-media(lightbox src="images/heart.jpg" width=200 height=200)
 
-{.caption} Scientists hope that explaining the origin of chaotic
-__heartbeats__ (_ventricular fibrillation_) can lead to a cure.
+{.caption} يأمل العلماء بأن يتم تفسير أصل _نبضات القلب_ الفوضوية (رجفان بطينى) .حيث بتفسير هذا يمكننا التوصل لعلاج.
 
     // Often life threatening abnomal heartbeat after a heart attack. Maybe
     // chaos can predict this and help design better pacemakers.
@@ -248,15 +188,13 @@ __heartbeats__ (_ventricular fibrillation_) can lead to a cure.
 
     x-media(lightbox src="images/city.jpg" width=200 height=200)
 
-{.caption} __Population dynamics__ often is chaotic – from the number of humans
-in a city, to rodent, fish or insect populations.
+{.caption} عادة ما يكون _تغيُّر تعداد الجماعات_ نظام فوضى. مثل تغير تعداد البشر أو القوارض أو الأسماك أو الحشرات.
 
 ::: column(width=200)
 
     x-media(lightbox src="images/stars.jpg" width=200 height=200 credit="Hubble/ESO")
 
-{.caption} __Variable stars__ pulsate by altering their brightness over time.
-Some of these stars pulsate in a chaotic pattern.
+{.caption} تنبض _النجوم المتغيرة_ فيتم تبادل شدة إضاءتها بين القوة والضعف مع مرور الزمن. بعض هذه النجوم تنبض بنمط فوضوى.
 
     // https://en.wikipedia.org/wiki/Stellar_pulsation
 
@@ -264,25 +202,19 @@ Some of these stars pulsate in a chaotic pattern.
 
     x-media(lightbox src="images/code.jpg" width=200 height=200)
 
-{.caption} Computers can use chaotic systems to generate pseudo-__random
-numbers__, or to securely encrypt images.
+{.caption} يمكن للكمبيوترات أن تستخدم الأنظمة العشوائية لتوليد _أعداد شبه عشوائية_ أو لعمل تشفير آمن لصورة ما.
 
 :::
 
 ---
 > id: applications-1 
 
-Chaotic behaviour has also been found in electronic circuits, evolutionary
-biology as well as dripping water taps, and scientists around the world are
-researching many other applications.
+لوحظ وجود السلوك الفوضوى أيضا الدوائر الإلكترونية والأحياء التطورية و فى الصنابير التى يتقاطر منها الماء، و يعكف العلماء حول العالم للبحث فى العديد من التطبيقات الأخرى.
 
     // https://en.wikipedia.org/wiki/Chua%27s_circuit
     // https://www.quantamagazine.org/can-scientists-predict-the-future-of-evolution-20140717/
 
-But in all these examples, the existence of chaos means that there are
-fundamental limits to how well we can predict the future. This is often called
-a __prediction horizon__, beyond which it is impossible to make any accurate
-forecasts.
+إن رؤيتنا لكل هذه الأمثلة الفوضوية يعكس لنا أن هناك حدود أمام قدرتنا على تنبؤ المستقبل بدقة. وهذا يُطلق عليه عادةً _أُفُق التنبؤ_ و الذى يستحيل أن نقوم بأى تنبؤات دقيقة إذا تخطيناه.
 
 ::: column(width=300)
 
@@ -290,58 +222,42 @@ forecasts.
 
 ::: column.grow
 
-The weather forecast currently has a prediction horizon of approximately one
-week, and even with much better technology in the future, we might never surpass
-two weeks of accuracy.
+أُفُق التنبؤ لتوقعات الطقس يساوى تقريبًا أسبوعًا واحدًا، وحتى لو تقدمت التكنولوجيا كثيرا فى المستقبل فغالبًا لن نستطيع تخطى توقع أسبوعين بدقة.
 
-{.r} Instead, scientists can use probability to predict _averages_: for example
-how often they’d expect certain weather events (like a tornado) to occur in a
-year. These averages can be very accurate, even if we don’t know _when exactly_
-a tornado might happen.
-_{button.next-step} Continue_
+{.r} بدلا من هذا، يستخدم العلماء الاحتمالات ليتنبأوا بالمتوسطات الحسابية: فعلى سبيل المثال، كم مرة يُتوقع أن تقع أحداث طقس  معينة (مثل الإعصار) خلال العام. فهذه المتوسطات يمكنها أن تكون دقيقة للغاية حتى لو لم نعلم متى بالضبط سيحدث إعصار.
+_{button.next-step} أكمِل_
 
 :::
 
 ---
 > id: definitions
 
-Let’s summarise the key properties of _chaos_ that we have discovered so far:
+دعنا نقوم بتلخيص الصفات الأساسية للفوضى التى اكتشفناها سويًّا حتى الآن:
 
 ::: .theorem
 
-* A __chaotic system__ follows precise, [[deterministic|probabilistic|unpredictable]]
-  laws, often described by one or more differential equations.
-* {.reveal(when="blank-0")} Chaotic systems are highly __sensitive to change__.
-  [[Tiny|Large]] initial differences multiply over time and can lead to
-  [[huge|small|random]] differences in the result.
-* {.reveal(when="blank-1 blank-2")} The behaviour is __unpredictable__ and
-  non-repeating. It might even _look random_, but only because it depends on
-  imperceptible changes or measurement errors.
+* _النظام الفوضوى_ يتبع قوانين [[حتمية|احتمالية|غير متوقعة]] دقيقة، عادة ما يتم وصفها بمعادلة تفاضلية أو أكثر.
+* {.reveal(when="blank-0")} الأنظمة الفوضوية تكون حساسة جدا لأى تغيير. وبالتالى فالفروق الابتدائية [[الضئيلة|الكبيرة]] سيتضاعف مع الوقت و سيؤدى إلى فروق [[ضخمة|صغيرة|عشوائية]] فى النتائج.
+* {.reveal(when="blank-1 blank-2")} السلوك _غير متوقع_ ولا يمكننا إعادته. بل قد يبدو السلوك عشوائى، لكنه ليس كذلك، فهو يبدو هكذا بسبب التغيرات الغير محسوسة أو أخطاء القياس.
 
 :::
 
 ---
 > id: definitions-1
 
-Chaos theory tells us that we can never predict the future, or know in advance
-what outcome our actions might have. This can be worrying if you consider how
-much in our world depends on mathematical predictions: from modelling the wind
-flowing around airplanes or skyscrapers, to assessing the impact of climate
-change.
+تخبرنا نظرية الفوضى أننا لن نستطيع أبدا التنبؤ بالمستقبل أو نعرف مسبقا نتائج أفعالنا. قد يبدو هذا مقلقًا لو علمت الكم الكبير فى العالم الذى يعتمد على التوقعات الرياضية: ابتداءً من نمذجة الرياح الذى يسير حول الطائرات أو ناطحات السحاب، مرورًا بتقييم تأثير التغيُّر المناخى.
 
 ---
 > id: pop-culture
 > goals: video
 
-On the other hand, chaos theory and the butterfly effect were such simple and
-powerful ideas, that they soon started to appear in books, music lyrics, and
-even in movies:
+و على الجانب الآخر، فنظرية الفوضى و تأثيؤ الفراشة كانتا أفكار بسيطة و قوية لدرجة أنهما بدأا يظهران فى الكتب و كلمات الأغانى و حتى فى الأفلام:
 
 ::: figure
 
     x-video(src="images/jurassic-park.mp4" poster="images/jurassic-park.jpg" width=480 height=270 audio controls)
 
-{.caption} Extract from the movie _Jurassic Park_ (© Universal Pictures, 1993) 
+{.caption} مأخوذ من فلم _Jurassic Park_ (© Universal Pictures, 1993)
 
 :::
 
@@ -351,15 +267,13 @@ even in movies:
 
 
 
-## Mathematical Billiard
+## البلياردو الرياضية
 
 > id: pool
 > section: billiard
 > sectionBackground: dark casino
 
-One of the most surprising properties of chaos is that it can appear in really
-simple systems. You've already seen the double-pendulum in the previous section.
-Another fascinating example are billiard tables.
+من اكثر الخصائص المدهشة للفوضى، أنها تظهر فى أمثلة بسيطةً جدًا. لقد رأيتَ البندول المزدوج فى الفصل السابق. و مثال آخر رائع هو طاولات البلياردو.
 
 * https://plus.maths.org/content/chaos-billiard-table
 * https://en.wikipedia.org/wiki/Dynamical_billiards
@@ -368,19 +282,9 @@ Another fascinating example are billiard tables.
 * http://mathcircle.wustl.edu/uploads/4/9/7/9/49791831/20160306-billiards-presentation.pdf
 * http://people.maths.ox.ac.uk/tanner/Prospects2010/CUlcigraiTalk.pdf
 
-{.fixme} Imagine you are trying to predict the path a ball on a billiard table
-will take in response to a push. The rules at play simple: the ball's
-acceleration is equal to the force applied divided by its mass (that's Newton's
-second law of motion) and when it hits a side, the angle of reflection is equal
-to the angle of incidence (strictly speaking you also need to include the effect
-of friction, but that's not too hard to do).
+{.fixme} تخيل لو أنك تحاول التنبؤ بالمسار الذى ستتخذه كرة بلياردو على الطاولة نتيجة لدفعة عليها. القواعد الحاكمة لأمر بسيطة: عجلة الكرة تساوى القوة المطبقة على الكرة مقسومةً على كتلتها (هذا هو قانون الحركة الثانى لنيوتن) و عندما تصدم الكرة حافة الطاولة، فزاوية الانعكاس تساوى زاوية السقوط ( للدقة يلزمك أيضا أخذ تأثير الاحتكاك فى الاعتبار، لكن ذلك ليس صعبا)
 
-{.fixme} The trouble is that in your average pub setting you can't easily
-measure the exact amount of force applied to the ball, the exact angle with
-which it hits a side, and so on. As you make your calculations, this small
-initial uncertainty can snowball, so that pretty soon your prediction may
-become so uncertain as to be useless. That "sensitivity to ignorance" is the
-hallmark of mathematical chaos.
+{.fixme} تكمن المشكلة فى أنه عندما تلعب فى النادى فعادة لا يمكنك قياس بسهولة المقدار الدقيق للقوة المطبقة على الكرة ولا الزاوية الدقيقة التى ترتطم الكرة بها مع حافة الطاولة ، وهكذا. و حتى لو قمت بحساباتك، فالمقدار الصغير الابتدائى من عدم التأكد يمكنه أن يكون مثل كرة الثلج، فبعد خطوات قليلة ستكون توقعاتك غير أكيدة بل وعديمة الفائدة. هذه "الحساسية لعدم المعرفة" هى السمة المميزة لرياضيات الفوضى.
 
     figure.r
       svg(width=760 height=440 viewBox="0 0 760 440")
@@ -393,16 +297,15 @@ hallmark of mathematical chaos.
 
 ---
 
-### Elliptical Billiard
+### البلياردو البيضاوية
 
-Move the yellow ball in the center, and see where it ends up after 100
-collisions:
+حرك الكرة الصفراء للمنتصف، و انظر أين سينتهى بها المكاف بعد ١٠٠ اصطدام:
 
     figure: x-pool-table: svg(width=760 height=440 viewBox="0 0 760 440")
 
 ---
 
-### Chaotic Scattering
+### الانتشار الفوضوى
 
 {.fixme} Gaspard–Rice system
 
