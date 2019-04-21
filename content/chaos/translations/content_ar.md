@@ -77,36 +77,22 @@ _{button.next-step} أكمِل_
 
 ::: column.grow
 
-In 1962, the mathematician [Edward Lorenz](bio:lorenz) was working at MIT, where
-he was developing computer simulations of the atmosphere, to predict
-the weather.
+فى عام ١٩٦٢، كان العالم [إدورد لورنز](bio:lorenz) يعمل فى معهد MIT، حيث قام بتطوير محاكاة حاسوبية للمناخ لكى يتنبأ بالطقس.
 
-Lorenz had developed an algorithm that took current weather data like
-temperature, humidity and wind speed as inputs. It then calculated how these
-values would change a few minutes into the future. By repeating the process over
-and over again, he was able to predict the weather days, or even weeks into the
-future.
+قام لورنز بتطوير خوارزمية، والتى تأخذ بيانات الطقس الحالية مدخلات لها. من امثلة هذه المدخلات كل من درجة الحرارة و الرطوبة و سرعة الرياح. ثم تقوم الخوارزمية بحساب كيف ستتغير هذه المدخلات بعد عدة دقائق فى المستقبل. وبإعادة هذه العملية مرارًا و تكرارًا، استطاع العالم أن يتنبأ بالطقس لمدة أيام بل وحتى أسابيع فى المستقبل.
 
 ::: column(width=320)
 
     x-media(src="images/lgp30.jpg" width=320 height=280)
 
-{.caption} Edward Lorenz used an LGP-30, one of the first off-the-shelf
-computers.
+{.caption} استخدك لورنز جهاز LGP-30 و هو أحد أوائل أجهزة الكمبيوتر الجاهزة للاستخدام المباشر.
 
 :::
 
-One day, Lorenz decided to run parts of his simulation a second time, with the
-same input data. To his surprise, the weather predictions created in both cases
-were completely different!
+وفى أحد الأيام، قرر لورنز أن يقوم مرةً أخرى بتشغيل بعض أجزاء المحاكاة باستخدام نفس البيانات كمدخلات. لكنه اندهش عندما وجد ان تنبؤات الطقس كانت مختلفة تماما عن الحالة السابقة!
 
-{.r} At first, Lorenz thought there must be a bug in the code – but he quickly
-worked out what was actually going on. When running the simulation a second time,
-he had rounded some of the input values to fewer decimal places (for example
-0.506 instead of 0.506127). Even though the difference is tiny, less than 0.1%,
-it seems to have been enough to cause the simulation to make completely
-different forecasts.
-_{button.next-step} Continue_
+{.r} اعتقد لورنز فى بادئ الأمر أنه لابد أن يكون هناك خطأ فى سطور الأوامر، لكن سرعان ما استطاع معرفة ما حدث. عندما قام لورنز بتشغيل المحاكاة للمرة الثانية كان قد أجرى عملية تقريب لبعض قيم المدخلات بحيث يصبح العدد به خانات أقل (مثلا استخدم ٠.٥٠٦ بدلا من ٠.٥٠٦١٢٧( . و بالرغم من أن الفارق ضئيل للغاية  (أقل من ٠.١%) إلا أنه كان كافيا ليجعل المحاكاة تصدر تنبؤ مختلف
+_{button.next-step} _أكمِل
 
 ---
 > id: butterfly-1
